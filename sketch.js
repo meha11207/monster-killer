@@ -10,12 +10,12 @@ var hero,monster,rope,ground,bg;
 
 function preload() {
 //preload the images here
- bg = loadImage("background.png");
+
 }
 
 function setup() {
   createCanvas(1400, 800);
-  engin = Engine.create();
+  engine = Engine.create();
   world = engine.world;
   // create sprites here
   ground = new Ground(600,600,1200,20);
@@ -57,7 +57,7 @@ function setup() {
 }
 
 function draw() {
-  background(bg);
+  background("sykblue");
   Engine.update(engine);
 
   ground.display();
